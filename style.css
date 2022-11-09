@@ -1,0 +1,150 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+    --Grey: hsl(210,19.1%,18.4%);
+    --bg: hsl(228,11.1%,8.8%);
+}
+*,::after,::before{
+    box-sizing: border-box;
+}
+@media(max-width: 475px){
+    .wrapper, .wrapper2{
+        width: 90%;
+        height: fit-content;
+    }
+}
+
+@media(min-width: 476px){
+    .wrapper, .wrapper2{
+        width: 50%;
+    }
+}
+
+@media(min-width: 1100px){
+    .wrapper, .wrapper2{
+        width: 27%;
+    }
+}
+@media(min-width: 1600px){
+    .wrapper, .wrapper2{
+        width: 24%;
+    }
+}
+
+body{
+    background-color: var(--bg);
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+}
+h1{
+    color: var(--White);
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+p{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: var(--LightGrey);
+    line-height: 25px;
+}
+.main1{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    padding: 35px;
+    background: linear-gradient(180deg,hsl(213,20%,18%) -20%, hsl(216,12%,8%) 200%);
+    border-radius: 25px;
+    
+}
+.wrapper2{
+    padding: 35px 25px;
+    background: linear-gradient(180deg,hsl(213,20%,18%) -20%, hsl(216,12%,8%) 200%);
+    border-radius: 25px;
+    
+}
+
+#staricon{
+    background-color: var(--Grey);
+    padding: 15px;
+    border-radius: 50%;
+}
+.form{
+    position: relative;
+    height: 100%;
+}
+.submit{
+    margin-top: 15px;
+    color: var(--White);
+    background-color: var(--Orange);
+    height: 40px;
+    width: 100%;
+    padding: 0;
+    border-radius: 25px;
+    border-style: hidden;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.submit:hover{
+    color: var(--Orange);
+    background-color: var(--White);
+}
+.buttons{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    padding: 0;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: var(--DarkBlue);
+  color: var(--MediumGrey);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.buttons button.selected{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.buttons button:hover{
+    background-color: var(--LightGrey);
+    color:var(--White)
+}
+
+.hidden{
+    display: none;
+}
+.rate{
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    background-color: var(--Grey); 
+    border-radius: 15px;
+    padding: 5px;
+    padding: 5px 20px;
+    width: fit-content;
+}
+.rate > p{
+    color: var(--Orange);
+    margin: 0;
+    letter-spacing: 1.3px;
+    font-size: 16px;
+}
+.form-end{
+    align-items:center;
+    text-align: center;
+    height: 100%;
+}
